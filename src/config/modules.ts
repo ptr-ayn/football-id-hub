@@ -44,7 +44,7 @@ export const MODULES: AppModule[] = [
 
   // ---- Future modules (architecture prepared, UI placeholder only) ----
   { id: "training", title: "Training", description: "Session plans & drills", icon: Dumbbell, path: "/modules/training", group: "future", status: "soon", roles: ["coach", "org_admin"] },
-  { id: "attendance", title: "Attendance", description: "Check-ins & attendance rates", icon: ClipboardCheck, path: "/modules/attendance", group: "future", status: "soon", roles: ["coach", "org_admin", "parent"] },
+  { id: "attendance", title: "Attendance", description: "Check-ins & attendance rates", icon: ClipboardCheck, path: "/attendance", group: "future", status: "live", roles: ["coach", "org_admin", "parent"], mobileFor: ["parent", "coach"] },
   { id: "development", title: "Player Development", description: "Skills, goals & progress", icon: TrendingUp, path: "/modules/development", group: "future", status: "soon", roles: ["coach", "parent", "player", "org_admin"] },
   { id: "finance", title: "Finance & Payments", description: "Fees, invoices & payouts", icon: Wallet, path: "/modules/finance", group: "future", status: "soon", roles: ["org_admin", "parent"] },
   { id: "coach", title: "Coach Platform", description: "Licences & coaching career", icon: Megaphone, path: "/modules/coach", group: "future", status: "soon", roles: ["coach"] },
